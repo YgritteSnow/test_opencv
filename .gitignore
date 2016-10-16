@@ -51,3 +51,16 @@ Temporary Items
 *.mp4
 *.avi
 *.jpg
+test_opencv.VC.db
+test_opencv.VC.VC.opendb
+/Debug/*.*
+/test_opencv/Debug/*.*
+test_opencv/test_opencv.vcxproj
+test_opencv/test_opencv.vcxproj.user
+test_opencv.sln
+*.obj
+*.log
+*.pdb
+/x64/Debug/
+*.suo
+test_opencv.sln
