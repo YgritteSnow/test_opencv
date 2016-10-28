@@ -26,5 +26,8 @@
     <ClInclude Include="video_process.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="shape_funcs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -34,6 +34,9 @@ const char* g_windowName = "Example";
 const char* g_filename = "chongai.mp4";
 
 void main(int argc, char**argv){
-	CVideoProcess t = CVideoProcess("chongai.mp4");
+	//CVideoProcess t = CVideoProcess("chongai.mp4");
+	//t.Run();
+
+	CImageProcess t = CImageProcess();
 	t.Run();
  }
