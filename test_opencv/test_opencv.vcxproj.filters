@@ -18,15 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="image_process_funcs.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="image_process_funcs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="map_funcs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="frame_process.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="video_process.h">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="shape_funcs.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

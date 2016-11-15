@@ -3,6 +3,9 @@
 #include <opencv2\highgui\highgui.hpp>
 #include <cv.h>
 
+/***************************************************************
+**  ”∆µ¥¶¿Ì
+***************************************************************/
 class CVideoProcess
 {
 private:
@@ -15,9 +18,9 @@ private:
 	CVideoProcess() {}
 
 public:
-	CVideoProcess( const char* video_name) 
-		:m_fileName(video_name)
-		, m_windowName("CVideoProcess")
+	CVideoProcess( const char* video_name, const char* window_name = "CImageProcess")
+		: m_fileName(video_name)
+		, m_windowName(window_name)
 	{
 		cvNamedWindow(m_windowName, CV_WINDOW_AUTOSIZE);
 		if (!s_cvCapture)
@@ -34,6 +37,10 @@ public:
 
 	void Run()
 	{
+		if (!s_cvCapture) {
+			return;
+		}
+
 		int frame_count = (int)cvGetCaptureProperty(
 			s_cvCapture, CV_CAP_PROP_FRAME_COUNT);
 
@@ -85,5 +92,5 @@ public:
 	}
 };
 
-CvCapture* CVideoProcess::s_cvCapture = NULL;
+CvCapture* CVideoProcess::s_cvCapture = nullptr;
 int CVideoProcess::s_trackbarSlidePos = 0;
